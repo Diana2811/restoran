@@ -1,0 +1,24 @@
+.about-us {
+    padding: 100px 0;
+    min-height: $height;
+
+    background: {
+        image: url(images/fon_as.jpg),
+            linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
+         size: contain;
+        blend-mode: overlay;
+    }
+
+    box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
+
+&__dish {
+    width: 100%;
+
+}
+
+&__cook {
+    margin: 15px;
+    transform: translateX(40px);
+}
+
+}

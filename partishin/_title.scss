@@ -1,0 +1,32 @@
+%for_title{
+    font:{
+        family: $f_yeseva;
+        size:36px;
+    weight:bold;
+}
+    line-height: 1.4em;
+text-align: center;
+}
+
+%for_title_psevdo{
+    display: block;
+}
+.title{
+    &--white{
+        @extend %for_title;
+        color: $color_white;
+        &::after {
+            @extend %for_title_pseudo;
+            content:url(images/hed_wm.svg);
+        }
+    }
+    &--orang{
+        @extend %for_title;
+         color: $color_orang;
+        &::after{
+            @extend %for_title_pseudo;
+            content:url(images/Hed_v1.svg);
+        }
+    }
+
+}

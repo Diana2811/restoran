@@ -2,17 +2,42 @@
 .header{
     padding: 100px 0;
     background: {
-        image: url(images/head_b.jpg);
+        image: url(images/ban1.jpg);
         repeat:no-repeat;
         size: cover;
     }
     min-height: $height;
     color:$color_white;
     text-align: center;
+    
+    h1{
+        font-size: 90px;
+        text:{transform: lowercase;
+            shadow: 2px 2px 0px #000000;}
+        &::after{
+            display: block;
+            content: url(images/V1.svg);
+        }
+        @include phone(){
+            font-size: 3em;
+        }
+    }
+    
     &__item{
+        background-color: rgba(255,255,255,0.6);
+        padding: 30px 0;
+        color:$color_white;
+        text-transform: uppercase;
+        width: 218px;
+        display: inline-block;
+        border: 1px solid $color_white;
+        font-size: 18px;
+        margin: 15px;
         
         &:hover{
-            
+            color: $color_white;
+            background-color: rgba(255,255,255,0.7);
+            text-decoration: none;
         }
     }
 }

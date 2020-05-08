@@ -15,13 +15,51 @@ a {
 ul {
   list-style-type: none; }
 
+@omport 'title';
 .header {
   padding: 100px 0;
-  background-image: url(images/head_b.jpg);
+  background-image: url(images/ban1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 750px;
   color: #ffffff;
   text-align: center; }
+  .header h1 {
+    font-size: 90px;
+    text-transform: lowercase;
+    text-shadow: 2px 2px 0px #000000; }
+    .header h1::after {
+      display: block;
+      content: url(images/V1.svg); }
+    @media screen and (max-width: 576px) {
+      .header h1 {
+        font-size: 3em; } }
+  .header__item {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 218px;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    margin: 15px; }
+    .header__item:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.7);
+      text-decoration: none; }
+
+.about-us {
+  padding: 100px 0;
+  min-height: 750px;
+  background-image: url(images/fon_as.jpg), linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
+  background-size: contain;
+  background-blend-mode: overlay;
+  box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1); }
+  .about-us__dish {
+    width: 100%; }
+  .about-us__cook {
+    margin: 15px;
+    transform: translateX(40px); }
 
 /*# sourceMappingURL=style.css.map */

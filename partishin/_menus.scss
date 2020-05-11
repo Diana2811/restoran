@@ -1,0 +1,33 @@
+.menus{
+    padding: 100px 0;
+    min-height: $height;
+    background: {
+        image: url(images/bac.png),
+            linear-gradient(270deg, #Ffffff 18.35%, #f3f1f1 84.09%);
+        size: contain;
+        blend-mode: overlay;
+    }
+    
+    &__items{}
+    
+    &__item{
+        padding: 15px 0px;
+        }
+    
+    &__title{
+        padding: 7px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color_orang;
+        font:{
+            family:$f_yeseva;
+            size:21px;
+        }
+        line-height: 1.5em;
+        color: $color_orang;
+        }
+    
+    &__description{
+        padding: 7px 0;
+    }
+}

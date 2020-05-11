@@ -8,7 +8,7 @@
 text-align: center;
 }
 
-%for_title_psevdo{
+%for_title_pseudo{
     display: block;
 }
 .title{
@@ -17,7 +17,7 @@ text-align: center;
         color: $color_white;
         &::after {
             @extend %for_title_pseudo;
-            content:url(images/hed_wm.svg);
+            content:url(images/venw.svg);
         }
     }
     &--orang{
@@ -25,7 +25,7 @@ text-align: center;
          color: $color_orang;
         &::after{
             @extend %for_title_pseudo;
-            content:url(images/Hed_v1.svg);
+            content:url(images/znakorang.svg);
         }
     }
 

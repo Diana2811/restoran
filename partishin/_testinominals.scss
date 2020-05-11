@@ -1,0 +1,28 @@
+.testinominals {
+    padding: 100px 0;
+    min-height: $height;
+    background: {
+        image:url(images/bg2.jpg);
+        position: top center;
+        repeat:no-repeat;
+        size: cover;
+    }
+    color: $color_white;
+    text-align: center;
+    &__item{
+        background: {
+            color: rgba(0,0,0,0.8);
+        }
+    padding: 50px;
+        p{
+            font:{
+                family:$f_gentium;
+                size:24px;
+                weight:bold;
+            }
+            line-height: 1.5em;
+            margin: 15px;
+        }
+    }
+    
+}

@@ -1,0 +1,39 @@
+.ingradients{
+    padding: 100px 0;
+    min-height: $height;
+    background: {
+        image:url(images/bg1.jpg);
+        position: top center;
+        repeat:no-repeat;
+        size: cover;
+    }
+    color: $color_white;
+    text-align: center;
+    &__photos{
+        display: flex;
+        justify-content: center;
+    }
+    &__photo{
+        width: 115px;
+        height: 115px;
+        border-radius: 100%;
+        margin: 7.5px;
+        overflow: hidden;
+        border: 5px solid $color_orang;
+        
+        @include phone(){
+            width: 100px;
+            height: 100px;
+        }
+    }
+    img{
+        height: 100%;
+        transform: scale(1.3);
+    }
+    &__item{
+        background: {
+            color: rgba(0,0,0,0.8);
+        }
+        padding: 50px;
+    }
+}
